@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="Low-Poly-Gorilla2" size="400.000000 371.823669" />
-    <ImageTarget name="lowPoly_cat" size="500.000000 407.714844" />
+    <ImageTarget name="Shiba" size="1.000000 0.750000" />
+    <ImageTarget name="WhiteCat" size="1.000000 0.663542" />
+    <ImageTarget name="Husky" size="1.000000 1.038961" />
+    <ImageTarget name="GreyWhiteCat" size="1.000000 1.000000" />
+    <ImageTarget name="Gorilla" size="1.000000 0.665625" />
+    <ImageTarget name="Tiger" size="1.000000 0.648438" />
+    <ImageTarget name="WhiteCorgi" size="1.000000 1.200000" />
+    <ImageTarget name="Corgi2" size="1.000000 1.412752" />
+    <ImageTarget name="Butterfly" size="1.000000 0.544792" />
+    <ImageTarget name="GreyCat" size="1.000000 0.815430" />
   </Tracking>
 </QCARConfig>
