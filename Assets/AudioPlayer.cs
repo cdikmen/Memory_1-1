@@ -1,65 +1,26 @@
-﻿/*==============================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
-
-Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
-All Rights Reserved.
-Confidential and Proprietary - Protected under copyright and other laws.
-==============================================================================*/
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using Vuforia;
 
-/// <summary>
-///     A custom handler that implements the ITrackableEventHandler interface.
-/// </summary>
-public class AudioPlayer : MonoBehaviour, ITrackableEventHandler
-{
-    #region PRIVATE_MEMBER_VARIABLES
+public class AudioPlayer: MonoBehaviour {
 
-    protected TrackableBehaviour mTrackableBehaviour;
-    private AudioSource audioSource;
+    public AudioClip sound;
 
-    #endregion // PRIVATE_MEMBER_VARIABLES
+    public AudioSource audioS;
 
-    #region UNTIY_MONOBEHAVIOUR_METHODS
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
 
-    protected virtual void Start()
+    void animalSound()
     {
-        mTrackableBehaviour = GetComponent<TrackableBehaviour>();
-        audioSource = GetComponentInChildren<AudioSource>();
-        if (mTrackableBehaviour)
-            mTrackableBehaviour.RegisterTrackableEventHandler(this);
-    }
-
-    #endregion // UNTIY_MONOBEHAVIOUR_METHODS
-
-
-
-    /// <summary>
-    ///     Implementation of the ITrackableEventHandler function called when the
-    ///     tracking state changes.
-    /// </summary>
-    public void OnTrackableStateChanged(
-        TrackableBehaviour.Status previousStatus,
-        TrackableBehaviour.Status newStatus)
-    {
-        if (newStatus == TrackableBehaviour.Status.DETECTED ||
-            newStatus == TrackableBehaviour.Status.TRACKED ||
-            newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
-        {
-            audioSource.Play();
-        }
-        else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
-                 newStatus == TrackableBehaviour.Status.NOT_FOUND)
-        {
-
-        }
-        else
-        {
-
-        }
+        audioS.PlayOneShot(sound);
     }
 
 }
-
-  
