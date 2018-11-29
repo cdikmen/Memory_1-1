@@ -27,8 +27,8 @@ MonoBehaviour:
     eyewearType: 0
     stereoFramework: 0
     seeThroughConfiguration: 0
-    viewerName: 
-    viewerManufacturer: 
+    viewerName: Generic Cardboard
+    viewerManufacturer: Vuforia
     useCustomViewer: 0
     customViewer:
       Version: 0
@@ -69,6 +69,6 @@ MonoBehaviour:
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   webcam:
     deviceNameSetInEditor: 
-    flipHorizontally: 1
+    flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
